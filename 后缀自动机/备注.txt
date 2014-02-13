@@ -1,0 +1,10 @@
+right(s) 是否包含 right(trans(s, c))?
+一般不交
+
+parent 新添一个节点, 修正若干状态, 补若干条边
+
+nq 与 q 的 right 是否只相差一个元素 L + 1
+是
+
+为什么 parent 树的一些祖先可能不会转移到 q?
+可能转移到 q 的 parent 树上的祖先
