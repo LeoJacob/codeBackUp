@@ -1,10 +1,22 @@
-right(s) 是否包含 right(trans(s, c))?
-一般不交
+Q:right(s) 是否包含 right(trans(s, c))?
+A:一般不交
 
 parent 新添一个节点, 修正若干状态, 补若干条边
 
-nq 与 q 的 right 是否只相差一个元素 L + 1
-是
+Q:nq 与 q 的 right 是否只相差一个元素 L + 1
+A:是
 
-为什么 parent 树的一些祖先可能不会转移到 q?
-可能转移到 q 的 parent 树上的祖先
+Q:为什么 parent 树的一些祖先可能不会转移到 q?
+A:可能转移到 q 的 parent 树上的祖先
+
+Q:parent 树的每个叶子节点是不是一定 right 集合大小为 1?
+A:是
+
+Q:parent 树的每个非叶节点的孩子的 right 集合是不是该节点的一个划分?
+A:不是, 可能有的元素他的所有孩子都没有
+
+Q:parent 树的每个非叶节点是不是至多比其孩子的 right 集合大 1?
+A:是
+
+Q:什么时候会大 1?
+A:原来是叶节点
