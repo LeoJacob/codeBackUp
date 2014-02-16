@@ -76,6 +76,8 @@ int dfs(int x, int flow)
 			use += tmp;
 		}
 	}
+	if(!use)
+		level[x] = -1;
 	return use;
 }
 
